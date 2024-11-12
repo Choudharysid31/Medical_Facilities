@@ -4,7 +4,17 @@
       {
          "tag": "greeting",
          "patterns": [
-            "Hi", "Hello", "Hey", "Good morning", "Good evening", "Is anyone there?", "Hello bot"
+            "Hi", "Hello", "Hey", "Good morning", "Good evening", "Is anyone there?", "Hello bot","Hi",
+             "hii", "Hi", "hii", "hiii", "Is anyone there?", "Hello", "Good day", "What's up", "hay", "how are ya",
+             "whats up", "heyy", "whatsup", "watsup", "Hi there, can you help me with something?", "Hello! I have a question. Can you assist me?", "Hey, I need your help with something.",
+             "Good morning/afternoon/evening! Can you answer a question for me?", "Greetings! I need your assistance with something.", "Hi,can you provide me with some information?",  "Hello, can you help me?",
+             "Hey,I'm looking for some guidance. Can you help?", "Good day! Can you assist me with a query?", "Hi,I would like to ask you a question.",
+             "Hello", "Hey there", "Greetings", "Good morning", "Good afternoon", "Good evening", "Salutations", "Howdy", "Yo", "Hiya", "hai",
+             "What's up", "Sup", "Hola", "Bonjour", "Ciao", "Konnichiwa", "Namaste", "Salaam", "Shalom", "Good day", "Pleasure to chat with you",
+             "It's great to talk with you", "Hi chatbot", "Hello chatbot", "Hey chatbot", "What's new", "How's it going", "What's happening",
+             "What can you do for me", "How can I assist you", "Can you help me", "I need your help", "I have a question", "I'm here to chat",
+             "Let's talk", "What's on your mind", "What are you capable of doing", "What brings you here"
+
          ],
          "responses": [
             "Hello! How can I assist you today?",
@@ -16,7 +26,13 @@
          "tag": "symptom_inquiry",
          "patterns": [
             "I have a headache", "I'm feeling nauseous", "I have a sore throat", "I'm experiencing fatigue",
-            "What does a cough mean?", "I feel dizzy", "I have body aches", "I'm sneezing a lot"
+            "What does a cough mean?", "I feel dizzy", "I have body aches", "I'm sneezing a lot", "My head hurts.",
+            "I'm experiencing head pain.",
+            "I've got a throbbing headache.",
+            "My head is pounding.",    "I feel like I might vomit.",
+            "I'm feeling queasy.",
+            "My stomach feels unsettled.", "I feel like throwing up.",    "I'm extremely tired.", "I feel drained of energy.", "I'm exhausted all the time.",
+            "I feel constantly worn out."
          ],
          "responses": [
             "I’m sorry to hear that. Could you tell me if you have other symptoms?",
@@ -26,17 +42,24 @@
          "context_set": "symptom_inquiry"
       },
       {
-         "tag": "cold_flu_symptoms",
-         "patterns": [
-            "I think I have the flu", "I have a runny nose and cough", "I'm sneezing and have a sore throat",
-            "I feel feverish and tired", "Could this be a cold?"
-         ],
-         "responses": [
-            "It sounds like you may have cold or flu symptoms. Rest, hydration, and over-the-counter medications might help. Consider seeing a doctor if symptoms worsen.",
-            "These symptoms are common with cold and flu. Ensure you rest and drink plenty of fluids. If your temperature goes up or you feel worse, consult a healthcare provider."
-         ],
-         "context_set": "cold_flu_symptoms"
-      },
+        "tag": "cold_flu_symptoms",
+        "patterns": [
+          "I think I have the flu", "I have a runny nose and cough", "I'm sneezing and have a sore throat", "I feel feverish and tired",
+          "Could this be a cold?", "I feel achy and have a headache", "My body feels sore and I have chills", "I've been coughing and have a mild fever",
+          "I'm feeling under the weather", "I have a stuffy nose and I keep sneezing", "I'm feeling fatigued and have muscle aches",
+          "I'm experiencing congestion and a sore throat", "I have a mild fever and feel tired", "I think I'm coming down with something", "My throat hurts and I can't stop sneezing",
+          "I feel like I might have a cold or the flu"
+        ],
+        "responses": [
+          "It sounds like you may have symptoms commonly associated with a cold or the flu. Make sure to get plenty of rest, stay hydrated, and consider over-the-counter medications for relief. If you develop a high fever, experience difficulty breathing, or your symptoms persist beyond a week, it's best to consult a healthcare professional.",
+          "These symptoms could be signs of a cold or the flu. To help alleviate them, try resting, drinking warm fluids, and using a humidifier if you feel congested. If your symptoms worsen, especially if you experience chest pain or a persistent fever, reach out to a healthcare provider.",
+          "It seems like you might be dealing with cold or flu-like symptoms. Keep yourself warm, avoid strenuous activities, and monitor any changes in your symptoms. A doctor’s visit is advised if you have trouble breathing, your fever remains high, or your condition doesn’t improve within a few days.",
+          "Cold and flu symptoms often include what you're experiencing. You might find relief with rest, hydration, and over-the-counter remedies like decongestants or pain relievers. Remember, if symptoms become severe or last longer than a few days, it's best to check with a healthcare professional.",
+          "From your description, it sounds like you might have a cold or flu. Take it easy, get plenty of sleep, and consider natural remedies like ginger tea or honey to soothe your throat. Seek medical advice if you develop a persistent cough, fever, or any breathing difficulties."
+        ],
+        "context_set": "cold_flu_symptoms"
+},
+
       {
          "tag": "covid_symptoms",
          "patterns": [
